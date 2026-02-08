@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brand Book</title>
+  <title>/NGAGE &mdash; Brand Book</title>
   <link rel="stylesheet" href="styles/brandbook.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
   <!-- NAVIGATION                                   -->
   <!-- ============================================ -->
   <nav class="brand-nav">
-    <div class="nav-logo">[BRAND NAME]</div>
+    <div class="nav-logo">/NGAGE</div>
     <ul class="nav-links">
       <li><a href="#cover">Cover</a></li>
       <li><a href="#logo">Logo</a></li>
@@ -32,12 +32,14 @@
   <!-- ============================================ -->
   <section id="cover" class="section section--cover">
     <div class="cover-content">
-      <div class="cover-logo-placeholder">
-        <!-- Replace with your brand logo -->
-        <div class="placeholder-box placeholder-box--large">
-          <span>BRAND LOGO</span>
-          <small>Place your main logo file here</small>
-        </div>
+      <div class="cover-logo">
+        <!-- /N logomark — white on dark -->
+        <svg class="cover-logo-svg" viewBox="0 0 200 200" width="160" height="160">
+          <g fill="#FAFAFA">
+            <polygon points="30,180 62,180 102,20 70,20"/>
+            <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+          </g>
+        </svg>
       </div>
       <h1 class="cover-title">Brand Book</h1>
       <p class="cover-subtitle">Visual Identity Guidelines</p>
@@ -52,26 +54,53 @@
     <div class="section-header">
       <span class="section-number">01</span>
       <h2 class="section-title">Brand Logo</h2>
-      <p class="section-description">The logo is the cornerstone of our visual identity. It must be used consistently across all touchpoints to maintain brand recognition and integrity.</p>
+      <p class="section-description">The /NGAGE logo is built on two core elements: the slash mark "/" and the letterforms. The forward slash represents momentum, direction, and the act of engaging. It must be used consistently across all touchpoints.</p>
     </div>
 
-    <!-- Primary Logo -->
+    <!-- Primary Logo — Mark -->
     <div class="subsection">
-      <h3 class="subsection-title">Primary Logo</h3>
+      <h3 class="subsection-title">Primary Logomark &mdash; /N</h3>
       <div class="logo-display-grid">
         <div class="logo-card logo-card--light">
-          <div class="placeholder-box">
-            <span>BLACK LOGO</span>
-            <small>assets/logos/black/</small>
+          <div class="logo-card-inner">
+            <svg viewBox="0 0 200 200" width="120" height="120">
+              <g fill="#0A0A0A">
+                <polygon points="30,180 62,180 102,20 70,20"/>
+                <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+              </g>
+            </svg>
           </div>
-          <p class="logo-card-label">On Light Background</p>
+          <p class="logo-card-label">Black on Light</p>
         </div>
         <div class="logo-card logo-card--dark">
-          <div class="placeholder-box placeholder-box--inverted">
-            <span>WHITE LOGO</span>
-            <small>assets/logos/white/</small>
+          <div class="logo-card-inner">
+            <svg viewBox="0 0 200 200" width="120" height="120">
+              <g fill="#FAFAFA">
+                <polygon points="30,180 62,180 102,20 70,20"/>
+                <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+              </g>
+            </svg>
           </div>
-          <p class="logo-card-label">On Dark Background</p>
+          <p class="logo-card-label">White on Dark</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wordmark -->
+    <div class="subsection">
+      <h3 class="subsection-title">Wordmark &mdash; /NGAGE</h3>
+      <div class="logo-display-grid">
+        <div class="logo-card logo-card--light">
+          <div class="logo-card-inner">
+            <span class="wordmark-text wordmark-text--black">/NGAGE</span>
+          </div>
+          <p class="logo-card-label">Black on Light</p>
+        </div>
+        <div class="logo-card logo-card--dark">
+          <div class="logo-card-inner">
+            <span class="wordmark-text wordmark-text--white">/NGAGE</span>
+          </div>
+          <p class="logo-card-label">White on Dark</p>
         </div>
       </div>
     </div>
@@ -81,26 +110,43 @@
       <h3 class="subsection-title">Logo Variations</h3>
       <div class="logo-variations-grid">
         <div class="logo-variation-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Horizontal</span>
+          <div class="variation-preview">
+            <svg viewBox="0 0 200 200" width="60" height="60">
+              <g fill="#0A0A0A">
+                <polygon points="30,180 62,180 102,20 70,20"/>
+                <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+              </g>
+            </svg>
+            <span class="variation-wordmark">/NGAGE</span>
           </div>
           <p class="variation-label">Horizontal Lockup</p>
         </div>
         <div class="logo-variation-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Stacked</span>
+          <div class="variation-preview variation-preview--stacked">
+            <svg viewBox="0 0 200 200" width="50" height="50">
+              <g fill="#0A0A0A">
+                <polygon points="30,180 62,180 102,20 70,20"/>
+                <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+              </g>
+            </svg>
+            <span class="variation-wordmark variation-wordmark--sm">/NGAGE</span>
           </div>
           <p class="variation-label">Stacked Lockup</p>
         </div>
         <div class="logo-variation-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Icon</span>
+          <div class="variation-preview">
+            <svg viewBox="0 0 200 200" width="48" height="48">
+              <g fill="#0A0A0A">
+                <polygon points="30,180 62,180 102,20 70,20"/>
+                <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+              </g>
+            </svg>
           </div>
           <p class="variation-label">Icon / Favicon</p>
         </div>
         <div class="logo-variation-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Wordmark</span>
+          <div class="variation-preview">
+            <span class="variation-wordmark">/NGAGE</span>
           </div>
           <p class="variation-label">Wordmark Only</p>
         </div>
@@ -114,29 +160,38 @@
         <div class="clearspace-demo">
           <div class="clearspace-box">
             <div class="clearspace-inner">
-              <div class="placeholder-box placeholder-box--small">
-                <span>LOGO</span>
-              </div>
+              <svg viewBox="0 0 200 200" width="80" height="80">
+                <g fill="#0A0A0A">
+                  <polygon points="30,180 62,180 102,20 70,20"/>
+                  <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+                </g>
+              </svg>
             </div>
             <span class="clearspace-label clearspace-label--top">X</span>
             <span class="clearspace-label clearspace-label--right">X</span>
             <span class="clearspace-label clearspace-label--bottom">X</span>
             <span class="clearspace-label clearspace-label--left">X</span>
           </div>
-          <p class="detail-text">Maintain clear space equal to "X" on all sides. X = height of the logomark.</p>
+          <p class="detail-text">Maintain clear space equal to "X" on all sides. X = the height of the forward slash "/" in the logomark.</p>
         </div>
         <div class="min-size-demo">
           <div class="min-size-examples">
             <div class="min-size-item">
-              <div class="placeholder-box placeholder-box--tiny">
-                <span>30px</span>
-              </div>
+              <svg viewBox="0 0 200 200" width="30" height="30">
+                <g fill="#0A0A0A">
+                  <polygon points="30,180 62,180 102,20 70,20"/>
+                  <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+                </g>
+              </svg>
               <p>Digital minimum: 30px height</p>
             </div>
             <div class="min-size-item">
-              <div class="placeholder-box placeholder-box--tiny">
-                <span>10mm</span>
-              </div>
+              <svg viewBox="0 0 200 200" width="40" height="40">
+                <g fill="#0A0A0A">
+                  <polygon points="30,180 62,180 102,20 70,20"/>
+                  <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+                </g>
+              </svg>
               <p>Print minimum: 10mm height</p>
             </div>
           </div>
@@ -147,43 +202,43 @@
     <!-- Logo Misuse -->
     <div class="subsection">
       <h3 class="subsection-title">Logo Misuse</h3>
-      <p class="subsection-note">To maintain brand integrity, avoid the following:</p>
+      <p class="subsection-note">To protect the /NGAGE brand, never apply these treatments:</p>
       <div class="misuse-grid">
         <div class="misuse-card">
-          <div class="placeholder-box placeholder-box--small placeholder-box--error">
-            <span>Stretched</span>
+          <div class="misuse-preview misuse-preview--stretched">
+            <span class="misuse-mark">/N</span>
           </div>
           <p>Do not stretch or distort</p>
         </div>
         <div class="misuse-card">
-          <div class="placeholder-box placeholder-box--small placeholder-box--error">
-            <span>Rotated</span>
+          <div class="misuse-preview misuse-preview--rotated">
+            <span class="misuse-mark">/N</span>
           </div>
           <p>Do not rotate</p>
         </div>
         <div class="misuse-card">
-          <div class="placeholder-box placeholder-box--small placeholder-box--error">
-            <span>Recolored</span>
+          <div class="misuse-preview misuse-preview--recolored">
+            <span class="misuse-mark">/N</span>
           </div>
           <p>Do not use unapproved colors</p>
         </div>
         <div class="misuse-card">
-          <div class="placeholder-box placeholder-box--small placeholder-box--error">
-            <span>Low Contrast</span>
+          <div class="misuse-preview misuse-preview--lowcontrast">
+            <span class="misuse-mark">/N</span>
           </div>
           <p>Do not place on low-contrast backgrounds</p>
         </div>
         <div class="misuse-card">
-          <div class="placeholder-box placeholder-box--small placeholder-box--error">
-            <span>Effects</span>
+          <div class="misuse-preview misuse-preview--shadow">
+            <span class="misuse-mark">/N</span>
           </div>
           <p>Do not add shadows or effects</p>
         </div>
         <div class="misuse-card">
-          <div class="placeholder-box placeholder-box--small placeholder-box--error">
-            <span>Crowded</span>
+          <div class="misuse-preview misuse-preview--outline">
+            <span class="misuse-mark">/N</span>
           </div>
-          <p>Do not crowd with other elements</p>
+          <p>Do not use as outline only</p>
         </div>
       </div>
     </div>
@@ -196,49 +251,47 @@
     <div class="section-header">
       <span class="section-number">02</span>
       <h2 class="section-title">Color Palette</h2>
-      <p class="section-description">Our color system is designed to create visual consistency and emotional resonance across all brand touchpoints.</p>
+      <p class="section-description">The /NGAGE palette draws from the contrast of alpine landscapes: the depth of mountain shadows, the warmth of golden-hour light, and the clarity of snow-covered peaks. Bold, high-contrast, and grounded.</p>
     </div>
 
     <!-- Primary Colors -->
     <div class="subsection">
       <h3 class="subsection-title">Primary Colors</h3>
       <div class="color-grid color-grid--primary">
-        <div class="color-swatch" style="--swatch-color: #000000;">
+        <div class="color-swatch" style="--swatch-color: #0A0A0A;">
           <div class="swatch-preview"></div>
           <div class="swatch-info">
-            <p class="swatch-name">Black</p>
-            <p class="swatch-value">HEX #000000</p>
-            <p class="swatch-value">RGB 0, 0, 0</p>
-            <p class="swatch-value">CMYK 0, 0, 0, 100</p>
+            <p class="swatch-name">Summit Black</p>
+            <p class="swatch-value">HEX #0A0A0A</p>
+            <p class="swatch-value">RGB 10, 10, 10</p>
+            <p class="swatch-value">CMYK 0, 0, 0, 96</p>
           </div>
         </div>
-        <div class="color-swatch" style="--swatch-color: #FFFFFF;">
-          <div class="swatch-preview swatch-preview--bordered"></div>
-          <div class="swatch-info">
-            <p class="swatch-name">White</p>
-            <p class="swatch-value">HEX #FFFFFF</p>
-            <p class="swatch-value">RGB 255, 255, 255</p>
-            <p class="swatch-value">CMYK 0, 0, 0, 0</p>
-          </div>
-        </div>
-        <div class="color-swatch" style="--swatch-color: #AAAAAA;">
+        <div class="color-swatch" style="--swatch-color: #F0EDE8;">
           <div class="swatch-preview"></div>
           <div class="swatch-info">
-            <p class="swatch-name">Primary Color 1</p>
-            <p class="swatch-value">HEX #______</p>
-            <p class="swatch-value">RGB _, _, _</p>
-            <p class="swatch-value">CMYK _, _, _, _</p>
-            <p class="swatch-note">Update with your brand color</p>
+            <p class="swatch-name">Snow White</p>
+            <p class="swatch-value">HEX #F0EDE8</p>
+            <p class="swatch-value">RGB 240, 237, 232</p>
+            <p class="swatch-value">CMYK 0, 1, 3, 6</p>
           </div>
         </div>
-        <div class="color-swatch" style="--swatch-color: #CCCCCC;">
+        <div class="color-swatch" style="--swatch-color: #D4944C;">
           <div class="swatch-preview"></div>
           <div class="swatch-info">
-            <p class="swatch-name">Primary Color 2</p>
-            <p class="swatch-value">HEX #______</p>
-            <p class="swatch-value">RGB _, _, _</p>
-            <p class="swatch-value">CMYK _, _, _, _</p>
-            <p class="swatch-note">Update with your brand color</p>
+            <p class="swatch-name">Alpine Gold</p>
+            <p class="swatch-value">HEX #D4944C</p>
+            <p class="swatch-value">RGB 212, 148, 76</p>
+            <p class="swatch-value">CMYK 0, 30, 64, 17</p>
+          </div>
+        </div>
+        <div class="color-swatch" style="--swatch-color: #2D3142;">
+          <div class="swatch-preview"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Slate Depth</p>
+            <p class="swatch-value">HEX #2D3142</p>
+            <p class="swatch-value">RGB 45, 49, 66</p>
+            <p class="swatch-value">CMYK 32, 26, 0, 74</p>
           </div>
         </div>
       </div>
@@ -248,28 +301,28 @@
     <div class="subsection">
       <h3 class="subsection-title">Secondary Colors</h3>
       <div class="color-grid color-grid--secondary">
-        <div class="color-swatch" style="--swatch-color: #DDDDDD;">
+        <div class="color-swatch" style="--swatch-color: #E8A87C;">
           <div class="swatch-preview"></div>
           <div class="swatch-info">
-            <p class="swatch-name">Secondary 1</p>
-            <p class="swatch-value">HEX #______</p>
-            <p class="swatch-note">Update with your brand color</p>
+            <p class="swatch-name">Horizon Peach</p>
+            <p class="swatch-value">HEX #E8A87C</p>
+            <p class="swatch-value">RGB 232, 168, 124</p>
           </div>
         </div>
-        <div class="color-swatch" style="--swatch-color: #EEEEEE;">
+        <div class="color-swatch" style="--swatch-color: #7B8794;">
           <div class="swatch-preview"></div>
           <div class="swatch-info">
-            <p class="swatch-name">Secondary 2</p>
-            <p class="swatch-value">HEX #______</p>
-            <p class="swatch-note">Update with your brand color</p>
+            <p class="swatch-name">Mist Grey</p>
+            <p class="swatch-value">HEX #7B8794</p>
+            <p class="swatch-value">RGB 123, 135, 148</p>
           </div>
         </div>
-        <div class="color-swatch" style="--swatch-color: #F5F5F5;">
+        <div class="color-swatch" style="--swatch-color: #4A6670;">
           <div class="swatch-preview"></div>
           <div class="swatch-info">
-            <p class="swatch-name">Secondary 3</p>
-            <p class="swatch-value">HEX #______</p>
-            <p class="swatch-note">Update with your brand color</p>
+            <p class="swatch-name">Valley Teal</p>
+            <p class="swatch-value">HEX #4A6670</p>
+            <p class="swatch-value">RGB 74, 102, 112</p>
           </div>
         </div>
       </div>
@@ -279,17 +332,32 @@
     <div class="subsection">
       <h3 class="subsection-title">Color Usage Ratios</h3>
       <div class="color-usage-bar">
-        <div class="usage-segment" style="flex: 6; background: #000;">
-          <span>Primary 60%</span>
+        <div class="usage-segment" style="flex: 6; background: #0A0A0A;">
+          <span>Summit Black 60%</span>
         </div>
-        <div class="usage-segment" style="flex: 3; background: #AAAAAA;">
-          <span>Secondary 30%</span>
+        <div class="usage-segment" style="flex: 3; background: #2D3142;">
+          <span>Slate Depth 30%</span>
         </div>
-        <div class="usage-segment" style="flex: 1; background: #CCCCCC;">
-          <span>Accent 10%</span>
+        <div class="usage-segment" style="flex: 1; background: #D4944C;">
+          <span>Alpine Gold 10%</span>
         </div>
       </div>
-      <p class="detail-text">Follow the 60-30-10 rule to maintain visual hierarchy and balance across all materials.</p>
+      <p class="detail-text">The 60-30-10 rule ensures high contrast and visual authority. Summit Black dominates; Alpine Gold is reserved for key accent moments and CTAs.</p>
+    </div>
+
+    <!-- Gradient -->
+    <div class="subsection">
+      <h3 class="subsection-title">Brand Gradient</h3>
+      <div class="gradient-preview">
+        <div class="gradient-bar"></div>
+        <div class="gradient-labels">
+          <span>#2D3142</span>
+          <span>#4A6670</span>
+          <span>#D4944C</span>
+          <span>#E8A87C</span>
+        </div>
+      </div>
+      <p class="detail-text">The sunrise gradient may be used sparingly on hero sections or feature backgrounds to evoke the golden-hour alpine atmosphere.</p>
     </div>
   </section>
 
@@ -300,7 +368,7 @@
     <div class="section-header">
       <span class="section-number">03</span>
       <h2 class="section-title">Typography</h2>
-      <p class="section-description">Typography conveys our brand voice visually. Consistent use of our type system ensures clarity and recognition.</p>
+      <p class="section-description">/NGAGE uses a bold, condensed type system that mirrors the density and verticality of the logomark. Barlow Condensed for impact. Barlow for readability.</p>
     </div>
 
     <!-- Primary Typeface -->
@@ -310,11 +378,11 @@
         <p class="specimen-preview specimen-preview--display">Aa Bb Cc Dd Ee Ff Gg</p>
         <p class="specimen-preview specimen-preview--display-sm">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
         <p class="specimen-preview specimen-preview--display-sm">abcdefghijklmnopqrstuvwxyz</p>
-        <p class="specimen-preview specimen-preview--display-sm">0123456789 !@#$%&amp;*()</p>
+        <p class="specimen-preview specimen-preview--display-sm">0123456789 /!@#$%&amp;*()</p>
         <div class="specimen-details">
-          <p class="specimen-name">[Display Font Name]</p>
-          <p class="specimen-note">Used for headlines, hero text, and key brand moments. Replace with your chosen display typeface.</p>
-          <p class="specimen-note">Source: fonts/ directory or Google Fonts link</p>
+          <p class="specimen-name">Barlow Condensed</p>
+          <p class="specimen-note">Used for headlines, hero text, navigation, and the /NGAGE wordmark. The condensed proportions echo the vertical energy of the logomark's geometry.</p>
+          <p class="specimen-note">Source: Google Fonts &mdash; fonts.google.com/specimen/Barlow+Condensed</p>
         </div>
       </div>
     </div>
@@ -326,10 +394,11 @@
         <p class="specimen-preview specimen-preview--body">Aa Bb Cc Dd Ee Ff Gg</p>
         <p class="specimen-preview specimen-preview--body-sm">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
         <p class="specimen-preview specimen-preview--body-sm">abcdefghijklmnopqrstuvwxyz</p>
-        <p class="specimen-preview specimen-preview--body-sm">0123456789 !@#$%&amp;*()</p>
+        <p class="specimen-preview specimen-preview--body-sm">0123456789 /!@#$%&amp;*()</p>
         <div class="specimen-details">
-          <p class="specimen-name">[Body Font Name]</p>
-          <p class="specimen-note">Used for body copy, descriptions, UI text, and supporting content. Replace with your chosen body typeface.</p>
+          <p class="specimen-name">Barlow</p>
+          <p class="specimen-note">Used for body copy, descriptions, UI text, and supporting content. The wider proportions complement Barlow Condensed while maintaining family consistency.</p>
+          <p class="specimen-note">Source: Google Fonts &mdash; fonts.google.com/specimen/Barlow</p>
         </div>
       </div>
     </div>
@@ -340,50 +409,46 @@
       <div class="type-scale">
         <div class="scale-row">
           <span class="scale-label">H1 / Display</span>
-          <span class="scale-sample scale-sample--h1">Headline One</span>
-          <span class="scale-specs">48px / 56px line-height / 700</span>
+          <span class="scale-sample scale-sample--h1">/NGAGE Summit</span>
+          <span class="scale-specs">48px / 52px / 800</span>
         </div>
         <div class="scale-row">
           <span class="scale-label">H2 / Title</span>
-          <span class="scale-sample scale-sample--h2">Headline Two</span>
-          <span class="scale-specs">36px / 44px line-height / 700</span>
+          <span class="scale-sample scale-sample--h2">Engage Forward</span>
+          <span class="scale-specs">36px / 42px / 700</span>
         </div>
         <div class="scale-row">
           <span class="scale-label">H3 / Section</span>
-          <span class="scale-sample scale-sample--h3">Headline Three</span>
-          <span class="scale-specs">28px / 36px line-height / 600</span>
+          <span class="scale-sample scale-sample--h3">Brand Identity</span>
+          <span class="scale-specs">28px / 34px / 600</span>
         </div>
         <div class="scale-row">
           <span class="scale-label">H4 / Subsection</span>
-          <span class="scale-sample scale-sample--h4">Headline Four</span>
-          <span class="scale-specs">22px / 30px line-height / 600</span>
+          <span class="scale-sample scale-sample--h4">Visual Guidelines</span>
+          <span class="scale-specs">22px / 30px / 600</span>
         </div>
         <div class="scale-row">
           <span class="scale-label">Body</span>
-          <span class="scale-sample scale-sample--body">Body text sample</span>
-          <span class="scale-specs">16px / 26px line-height / 400</span>
+          <span class="scale-sample scale-sample--body">The /NGAGE brand represents forward momentum.</span>
+          <span class="scale-specs">16px / 26px / 400</span>
         </div>
         <div class="scale-row">
           <span class="scale-label">Small</span>
-          <span class="scale-sample scale-sample--small">Small text sample</span>
-          <span class="scale-specs">14px / 20px line-height / 400</span>
+          <span class="scale-sample scale-sample--small">Supporting information and captions</span>
+          <span class="scale-specs">14px / 20px / 400</span>
         </div>
         <div class="scale-row">
           <span class="scale-label">Caption</span>
-          <span class="scale-sample scale-sample--caption">Caption text sample</span>
-          <span class="scale-specs">12px / 16px line-height / 400</span>
+          <span class="scale-sample scale-sample--caption">LABELS &middot; TAGS &middot; METADATA</span>
+          <span class="scale-specs">12px / 16px / 500</span>
         </div>
       </div>
     </div>
 
     <!-- Font Weights -->
     <div class="subsection">
-      <h3 class="subsection-title">Font Weights</h3>
+      <h3 class="subsection-title">Font Weights &mdash; Barlow Condensed</h3>
       <div class="weight-grid">
-        <div class="weight-sample" style="font-weight: 300;">
-          <span class="weight-preview">Light 300</span>
-          <span class="weight-text">The quick brown fox jumps over the lazy dog.</span>
-        </div>
         <div class="weight-sample" style="font-weight: 400;">
           <span class="weight-preview">Regular 400</span>
           <span class="weight-text">The quick brown fox jumps over the lazy dog.</span>
@@ -400,6 +465,14 @@
           <span class="weight-preview">Bold 700</span>
           <span class="weight-text">The quick brown fox jumps over the lazy dog.</span>
         </div>
+        <div class="weight-sample" style="font-weight: 800;">
+          <span class="weight-preview">ExtraBold 800</span>
+          <span class="weight-text">The quick brown fox jumps over the lazy dog.</span>
+        </div>
+        <div class="weight-sample" style="font-weight: 900;">
+          <span class="weight-preview">Black 900</span>
+          <span class="weight-text">The quick brown fox jumps over the lazy dog.</span>
+        </div>
       </div>
     </div>
   </section>
@@ -411,7 +484,7 @@
     <div class="section-header">
       <span class="section-number">04</span>
       <h2 class="section-title">Brand Guidelines</h2>
-      <p class="section-description">Rules and principles that govern how the brand is expressed visually and verbally.</p>
+      <p class="section-description">Rules and principles that govern how /NGAGE is expressed visually and verbally across every touchpoint.</p>
     </div>
 
     <!-- Brand Voice -->
@@ -419,20 +492,20 @@
       <h3 class="subsection-title">Brand Voice & Tone</h3>
       <div class="voice-grid">
         <div class="voice-card">
-          <h4>[Attribute 1]</h4>
-          <p>Description of how the brand communicates with this attribute. Replace with your brand's voice characteristics.</p>
+          <h4>Bold</h4>
+          <p>/NGAGE communicates with confidence and clarity. We lead conversations, not follow them. Every statement should feel decisive and direct.</p>
         </div>
         <div class="voice-card">
-          <h4>[Attribute 2]</h4>
-          <p>Description of how the brand communicates with this attribute.</p>
+          <h4>Elevated</h4>
+          <p>Like the alpine peaks that inspire us, our language aims higher. We choose precision over filler. Quality over quantity. Every word earns its place.</p>
         </div>
         <div class="voice-card">
-          <h4>[Attribute 3]</h4>
-          <p>Description of how the brand communicates with this attribute.</p>
+          <h4>Forward</h4>
+          <p>The "/" in /NGAGE means movement. Our voice is future-facing, action-oriented, and always pushing toward the next summit.</p>
         </div>
         <div class="voice-card">
-          <h4>[Attribute 4]</h4>
-          <p>Description of how the brand communicates with this attribute.</p>
+          <h4>Grounded</h4>
+          <p>Ambition without pretension. We're bold but never hollow. Our voice is rooted in substance, expertise, and authenticity.</p>
         </div>
       </div>
     </div>
@@ -444,19 +517,21 @@
         <div class="photo-do">
           <h4>Do</h4>
           <ul>
-            <li>Use natural lighting whenever possible</li>
-            <li>Feature authentic, candid moments</li>
-            <li>Maintain consistent color grading</li>
-            <li>Ensure diverse representation</li>
+            <li>Favor golden-hour and dramatic natural lighting</li>
+            <li>Use high-contrast, cinematic compositions</li>
+            <li>Feature expansive landscapes and textured surfaces</li>
+            <li>Maintain warm-to-cool tonal balance</li>
+            <li>Show depth through atmospheric perspective and haze</li>
           </ul>
         </div>
         <div class="photo-dont">
           <h4>Don't</h4>
           <ul>
-            <li>Use overly staged or stock-looking images</li>
-            <li>Apply heavy filters that distort brand colors</li>
-            <li>Use low-resolution or pixelated images</li>
-            <li>Crop logos or key brand elements</li>
+            <li>Use flat, evenly-lit stock photography</li>
+            <li>Apply heavy filters that distort the brand palette</li>
+            <li>Use low-resolution or heavily compressed images</li>
+            <li>Default to generic corporate or tech imagery</li>
+            <li>Use saturated, candy-colored or neon aesthetics</li>
           </ul>
         </div>
       </div>
@@ -467,25 +542,16 @@
       <h3 class="subsection-title">Graphic Elements & Patterns</h3>
       <div class="pattern-grid">
         <div class="pattern-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Pattern 1</span>
-            <small>assets/patterns/</small>
-          </div>
-          <p>Primary pattern</p>
+          <div class="pattern-preview pattern-preview--diagonal"></div>
+          <p>Diagonal Lines &mdash; derived from the "/" slash</p>
         </div>
         <div class="pattern-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Pattern 2</span>
-            <small>assets/patterns/</small>
-          </div>
-          <p>Secondary pattern</p>
+          <div class="pattern-preview pattern-preview--grid"></div>
+          <p>Geometric Grid &mdash; structural backbone</p>
         </div>
         <div class="pattern-card">
-          <div class="placeholder-box placeholder-box--small">
-            <span>Texture</span>
-            <small>assets/textures/</small>
-          </div>
-          <p>Brand texture</p>
+          <div class="pattern-preview pattern-preview--gradient"></div>
+          <p>Gradient Texture &mdash; atmospheric depth</p>
         </div>
       </div>
     </div>
@@ -494,27 +560,25 @@
     <div class="subsection">
       <h3 class="subsection-title">Iconography</h3>
       <div class="icon-guidelines">
-        <div class="icon-grid">
-          <div class="icon-placeholder">
-            <div class="placeholder-box placeholder-box--tiny"><span>Icon</span></div>
+        <div class="icon-specs">
+          <div class="icon-spec-item">
+            <span class="icon-spec-label">Stroke Weight</span>
+            <span class="icon-spec-value">2px</span>
           </div>
-          <div class="icon-placeholder">
-            <div class="placeholder-box placeholder-box--tiny"><span>Icon</span></div>
+          <div class="icon-spec-item">
+            <span class="icon-spec-label">Corner Radius</span>
+            <span class="icon-spec-value">1px</span>
           </div>
-          <div class="icon-placeholder">
-            <div class="placeholder-box placeholder-box--tiny"><span>Icon</span></div>
+          <div class="icon-spec-item">
+            <span class="icon-spec-label">Grid Size</span>
+            <span class="icon-spec-value">24 &times; 24px</span>
           </div>
-          <div class="icon-placeholder">
-            <div class="placeholder-box placeholder-box--tiny"><span>Icon</span></div>
-          </div>
-          <div class="icon-placeholder">
-            <div class="placeholder-box placeholder-box--tiny"><span>Icon</span></div>
-          </div>
-          <div class="icon-placeholder">
-            <div class="placeholder-box placeholder-box--tiny"><span>Icon</span></div>
+          <div class="icon-spec-item">
+            <span class="icon-spec-label">Style</span>
+            <span class="icon-spec-value">Outlined, geometric</span>
           </div>
         </div>
-        <p class="detail-text">Icons should follow a consistent stroke weight, corner radius, and visual style. Place icon files in assets/icons/.</p>
+        <p class="detail-text">Icons follow a sharp, geometric style with consistent 2px strokes. Rounded caps are avoided to match the angular energy of the /NGAGE logomark. Place icon files in assets/icons/.</p>
       </div>
     </div>
   </section>
@@ -526,7 +590,7 @@
     <div class="section-header">
       <span class="section-number">05</span>
       <h2 class="section-title">Brand Applications</h2>
-      <p class="section-description">Examples of how the brand identity is applied across different media and formats.</p>
+      <p class="section-description">How the /NGAGE identity lives across digital and physical formats.</p>
     </div>
 
     <!-- Stationery -->
@@ -534,23 +598,39 @@
       <h3 class="subsection-title">Stationery</h3>
       <div class="application-grid">
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Business Card</span>
-            <small>images/applications/</small>
+          <div class="app-mockup app-mockup--bcard">
+            <div class="bcard-front">
+              <svg viewBox="0 0 200 200" width="28" height="28">
+                <g fill="#0A0A0A">
+                  <polygon points="30,180 62,180 102,20 70,20"/>
+                  <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+                </g>
+              </svg>
+              <div class="bcard-info">
+                <span class="bcard-name">John Doe</span>
+                <span class="bcard-role">Creative Director</span>
+              </div>
+            </div>
           </div>
-          <p>Business Card &mdash; Front & Back</p>
+          <p>Business Card &mdash; Front</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Letterhead</span>
-            <small>images/applications/</small>
+          <div class="app-mockup app-mockup--letterhead">
+            <div class="letterhead-header">
+              <span class="letterhead-logo">/NGAGE</span>
+            </div>
+            <div class="letterhead-lines">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
           </div>
           <p>Letterhead &mdash; A4</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Envelope</span>
-            <small>images/applications/</small>
+          <div class="app-mockup app-mockup--envelope">
+            <span class="envelope-logo">/N</span>
+            <div class="envelope-address">
+              <span></span><span></span><span></span>
+            </div>
           </div>
           <p>Envelope &mdash; Standard</p>
         </div>
@@ -562,25 +642,38 @@
       <h3 class="subsection-title">Digital Applications</h3>
       <div class="application-grid">
         <div class="application-card application-card--wide">
-          <div class="placeholder-box placeholder-box--app-wide">
-            <span>Website</span>
-            <small>images/applications/</small>
+          <div class="app-mockup app-mockup--website">
+            <div class="website-nav">
+              <span class="website-logo">/NGAGE</span>
+              <div class="website-nav-links"><span></span><span></span><span></span></div>
+            </div>
+            <div class="website-hero">
+              <span class="website-hero-text">ENGAGE<br>FORWARD</span>
+            </div>
           </div>
           <p>Website &mdash; Desktop View</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Mobile</span>
-            <small>images/applications/</small>
+          <div class="app-mockup app-mockup--mobile">
+            <div class="mobile-screen">
+              <span class="mobile-logo">/N</span>
+              <span class="mobile-text">ENGAGE</span>
+            </div>
           </div>
           <p>Website &mdash; Mobile View</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Social Media</span>
-            <small>images/applications/</small>
+          <div class="app-mockup app-mockup--social">
+            <div class="social-post">
+              <svg viewBox="0 0 200 200" width="40" height="40">
+                <g fill="#FAFAFA">
+                  <polygon points="30,180 62,180 102,20 70,20"/>
+                  <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+                </g>
+              </svg>
+            </div>
           </div>
-          <p>Social Media Templates</p>
+          <p>Social Media &mdash; Profile</p>
         </div>
       </div>
     </div>
@@ -590,30 +683,34 @@
       <h3 class="subsection-title">Merchandise & Physical</h3>
       <div class="application-grid">
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>T-Shirt</span>
-            <small>images/mockups/</small>
+          <div class="app-mockup app-mockup--tshirt">
+            <div class="tshirt-body">
+              <span class="tshirt-logo">/N</span>
+            </div>
           </div>
-          <p>Apparel Mockup</p>
+          <p>Apparel &mdash; T-Shirt</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Tote Bag</span>
-            <small>images/mockups/</small>
+          <div class="app-mockup app-mockup--tote">
+            <div class="tote-body">
+              <span class="tote-logo">/NGAGE</span>
+            </div>
           </div>
-          <p>Tote Bag Mockup</p>
+          <p>Tote Bag</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Packaging</span>
-            <small>images/mockups/</small>
+          <div class="app-mockup app-mockup--cap">
+            <div class="cap-body">
+              <span class="cap-logo">/N</span>
+            </div>
           </div>
-          <p>Packaging Mockup</p>
+          <p>Cap / Hat</p>
         </div>
         <div class="application-card">
-          <div class="placeholder-box placeholder-box--app">
-            <span>Signage</span>
-            <small>images/mockups/</small>
+          <div class="app-mockup app-mockup--signage">
+            <div class="signage-body">
+              <span class="signage-logo">/NGAGE</span>
+            </div>
           </div>
           <p>Signage / Environmental</p>
         </div>
@@ -628,58 +725,50 @@
     <div class="section-header">
       <span class="section-number">06</span>
       <h2 class="section-title">Reference Images</h2>
-      <p class="section-description">Mood board and visual references that inform the brand's aesthetic direction, texture, and feel.</p>
+      <p class="section-description">The /NGAGE visual world is defined by alpine grandeur, golden-hour warmth, atmospheric depth, and the raw textures of rock and snow. These references guide all creative decisions.</p>
     </div>
 
     <div class="subsection">
       <h3 class="subsection-title">Mood Board</h3>
       <div class="moodboard-grid">
-        <div class="moodboard-item moodboard-item--tall">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 1</span>
-            <small>images/references/</small>
+        <div class="moodboard-item moodboard-item--hero">
+          <div class="moodboard-color" style="background: linear-gradient(135deg, #2D3142 0%, #4A6670 40%, #D4944C 80%, #E8A87C 100%);">
+            <span class="moodboard-label">Alpine Sunrise &mdash; Primary Reference</span>
           </div>
         </div>
         <div class="moodboard-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 2</span>
-            <small>images/references/</small>
+          <div class="moodboard-color" style="background: #0A0A0A;">
+            <span class="moodboard-label" style="color: #F0EDE8;">Summit Black</span>
           </div>
         </div>
         <div class="moodboard-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 3</span>
-            <small>images/references/</small>
-          </div>
-        </div>
-        <div class="moodboard-item moodboard-item--wide">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 4</span>
-            <small>images/references/</small>
+          <div class="moodboard-color" style="background: linear-gradient(180deg, #D4944C, #E8A87C);">
+            <span class="moodboard-label">Golden Hour</span>
           </div>
         </div>
         <div class="moodboard-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 5</span>
-            <small>images/references/</small>
-          </div>
-        </div>
-        <div class="moodboard-item moodboard-item--tall">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 6</span>
-            <small>images/references/</small>
+          <div class="moodboard-color" style="background: linear-gradient(180deg, #2D3142, #4A6670);">
+            <span class="moodboard-label" style="color: #F0EDE8;">Valley Depth</span>
           </div>
         </div>
         <div class="moodboard-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 7</span>
-            <small>images/references/</small>
+          <div class="moodboard-color" style="background: #F0EDE8;">
+            <span class="moodboard-label">Snow Surface</span>
           </div>
         </div>
         <div class="moodboard-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Reference 8</span>
-            <small>images/references/</small>
+          <div class="moodboard-color" style="background: linear-gradient(135deg, #7B8794, #4A6670);">
+            <span class="moodboard-label" style="color: #F0EDE8;">Atmospheric Haze</span>
+          </div>
+        </div>
+        <div class="moodboard-item">
+          <div class="moodboard-color" style="background: linear-gradient(180deg, #0A0A0A 0%, #2D3142 50%, #D4944C 100%);">
+            <span class="moodboard-label" style="color: #F0EDE8;">Peak Contrast</span>
+          </div>
+        </div>
+        <div class="moodboard-item">
+          <div class="moodboard-color" style="background: #7B8794;">
+            <span class="moodboard-label">Rock Texture</span>
           </div>
         </div>
       </div>
@@ -687,27 +776,23 @@
 
     <!-- Color & Texture References -->
     <div class="subsection">
-      <h3 class="subsection-title">Color & Texture References</h3>
+      <h3 class="subsection-title">Texture & Material References</h3>
       <div class="texture-grid">
         <div class="texture-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Texture Ref 1</span>
-          </div>
+          <div class="texture-preview" style="background: repeating-linear-gradient(60deg, #0A0A0A 0px, #0A0A0A 2px, transparent 2px, transparent 12px);"></div>
+          <p class="texture-label">Diagonal Lines</p>
         </div>
         <div class="texture-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Texture Ref 2</span>
-          </div>
+          <div class="texture-preview" style="background: linear-gradient(135deg, #2D3142, #0A0A0A);"></div>
+          <p class="texture-label">Dark Gradient</p>
         </div>
         <div class="texture-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Texture Ref 3</span>
-          </div>
+          <div class="texture-preview" style="background: linear-gradient(to right, #D4944C, #E8A87C, #F0EDE8);"></div>
+          <p class="texture-label">Warm Gradient</p>
         </div>
         <div class="texture-item">
-          <div class="placeholder-box placeholder-box--fill">
-            <span>Texture Ref 4</span>
-          </div>
+          <div class="texture-preview" style="background: repeating-linear-gradient(0deg, #F0EDE8 0px, #F0EDE8 1px, transparent 1px, transparent 8px), repeating-linear-gradient(90deg, #F0EDE8 0px, #F0EDE8 1px, transparent 1px, transparent 8px); background-color: #0A0A0A;"></div>
+          <p class="texture-label">Grid Pattern</p>
         </div>
       </div>
     </div>
@@ -717,7 +802,15 @@
   <!-- FOOTER                                       -->
   <!-- ============================================ -->
   <footer class="brand-footer">
-    <p>[BRAND NAME] &mdash; Brand Book v1.0</p>
+    <div class="footer-logo">
+      <svg viewBox="0 0 200 200" width="32" height="32">
+        <g fill="#7B8794">
+          <polygon points="30,180 62,180 102,20 70,20"/>
+          <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+        </g>
+      </svg>
+    </div>
+    <p>/NGAGE &mdash; Brand Book v1.0</p>
     <p>Confidential. For internal use only.</p>
   </footer>
 
