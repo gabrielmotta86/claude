@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#0A0A0A"/>
+  <!-- /N logomark -->
+  <g fill="#FAFAFA">
+    <!-- Forward slash -->
+    <polygon points="30,180 62,180 102,20 70,20"/>
+    <!-- N letter -->
+    <polygon points="80,20 80,180 112,180 112,72 156,180 180,180 180,20 148,20 148,128 104,20"/>
+  </g>
+</svg>
